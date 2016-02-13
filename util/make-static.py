@@ -15,11 +15,9 @@ with open('../index.html', 'r') as fp:
 
 #print(index)
 
-# remove the No Javscript warning
-index = index.replace('<div id="no-js-detected"><span class="error">ERROR:</span> No Javascript detected, the plain html version: <a href="static/plain.html">static/plain.html</a></div>', '<div id="no-js-detected" class="center"><span class="error">Info:</span> You are viewing the plain HTML version of this site.</div>')
-index = index.replace('static/normalize.css', '../static/normalize.css')
-index = index.replace('static/skeleton.css', '../static/skeleton.css')
-index = index.replace('static/style.css', '../static/style.css')
+# remove the No Javascript warning, and change a few things 
+index = index.replace('<div id="no-js-detected" class="center"><span class="error">ERROR:</span> No Javascript detected, view the plain html version: <a href="plain.html">plain.html</a></div>', 
+	                  '<div id="no-js-detected" class="center">INFO: no javascript detected, now viewing the single page plain HTML version)</div>')
 
 
 # get the div#view elements position in the string
@@ -29,51 +27,33 @@ p = index.index('<div id="view"></div>')
 # adjust pointer to point between the opening and closing tag
 p += len('<div id="view">')
 
-
-
-
-# separate the header from the footer
+# sever the head from foot at p
 header = index[:p]
 footer = index[p:]
 
-#print(header)
-#print('|||split|||')
-#print(footer)
 
-
-# iterate through files in the view dir, and concat their contents into a single page
+# get files and concat their contents into a single page
 content = ''
 
-#from os import walk
-#f = []
-#for (dirpath, dirnames, filenames) in walk('../view'):
-#	f.extend(filenames)
-#	break
-
-
-def get(name):
+def fs_readfile(name):
 	c = ''
 	with open('../view/%s.html' % name, 'r') as fp:
 		c = fp.read()
-		c += '<br><hr><br>\n'
+
 	return c
 
-content += get('status')
-content += get('resources')
-content += get('dev')
-content += get('media')
-content += get('music')
-content += get('blog')
 
-#print(content)
-#print(f)
+views = ['status', 'resources', 'dev', 'media', 'music', 'blog']
+
+for v in views:
+	content += fs_readfile(v)
+	content += '\n<br><hr><br>\n'
+
 # compile single page html
 html = header + content + footer
 
-#print(html)
-
 # write page to plain.html
-with open('../static/plain.html', 'w') as fp:
+with open('../plain.html', 'w') as fp:
 	fp.write(html)
 
 print('[make-static.py] complete')
