@@ -1,0 +1,107 @@
+/* 
+ * style.css (stylesheet for the website 'vokoun.github.io')
+ * Copyright 2016 David Vokoun
+ * Free software under the terms of the MIT License
+ */
+
+
+.header {
+	text-align:center;
+	padding-top:30px;
+}
+
+
+
+#view {
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	
+	padding-top:20px;
+	margin-bottom:30px;
+
+}
+
+
+.tab {
+	cursor:pointer;
+	font-weight:bold;
+	font-variant: small-caps;
+	background:transparent;
+}
+
+.tab:hover {
+	background:#444543;
+	color:#fefefe;
+	font-weight:bold;
+}
+
+.tab-active {
+	background:gold;
+}
+
+.tab-active:hover {
+	background:gold;
+	color:black;
+}
+
+.center, .copyright-notice {
+	text-align:center;
+}
+
+
+a {
+	color:#00447c;
+}
+
+
+.status-item {
+		padding:4px; 
+	margin-bottom:10px;
+}
+.status-item p {
+	margin-bottom:0;
+}
+
+.news-item {
+	font-size:small;
+	margin-bottom:4px;
+	padding:4px; 
+}
+/* class modifiers */
+.tiny {
+	font-size:40%;
+}
+
+.hidden {
+	display:none;
+	position:absolute;
+	top:-1000px;
+	left:-1000px;
+	width:1px;
+	height:1px;
+}
+
+date {
+	font-size:small;
+	color:#888;
+}
+
+
+#news, #links {
+}
+
+
+.embed {
+	border:1px solid #eee;
+}
+
+.embed {background:#f2f2f2; padding-bottom:0; cursor:pointer; }
+
+.embed iframe {padding-bottom:0; margin:0; margin-bottom:0;}
+
+
+.pad20 { padding:20px;}
+
+.center {
+	text-align: center;
+}
