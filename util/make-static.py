@@ -17,7 +17,7 @@ with open('../index.html', 'r') as fp:
 
 # remove the No Javascript warning, and change a few things 
 index = index.replace('<div id="no-js-detected" class="center"><span class="error">ERROR:</span> No Javascript detected, view the plain html version: <a href="plain.html">plain.html</a></div>', 
-	                  '<div id="no-js-detected" class="center">INFO: no javascript detected, now viewing the single page plain HTML version)</div>')
+	                  '<div id="no-js-detected" class="center"><span class="error">INFO:</span> no javascript detected, now viewing the single page plain HTML version)</div>')
 
 
 # get the div#view elements position in the string

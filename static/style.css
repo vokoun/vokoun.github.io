@@ -90,6 +90,13 @@ date {
 #news, #links {
 }
 
+#no-js-detected {
+	background: gold;
+}
+.error {
+	color:red;
+	font-weight: bold;
+}
 
 .embed {
 	border:1px solid #eee;

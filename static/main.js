@@ -20,12 +20,12 @@ function getHash() {
 var state = getHash() || 'status';
 
 function changeTab(name) {
-	$('span#tab-dev').classList.remove('tab-active');
-	$('span#tab-media').classList.remove('tab-active');
 	$('span#tab-status').classList.remove('tab-active');
+	//$('span#tab-dev').classList.remove('tab-active');
+	//$('span#tab-media').classList.remove('tab-active');
 	$('span#tab-blog').classList.remove('tab-active');
 	$('span#tab-resources').classList.remove('tab-active');
-	$('span#tab-music').classList.remove('tab-active');
+	//$('span#tab-music').classList.remove('tab-active');
 
 	
 	if (name !== null && name !== 'null') {
@@ -67,12 +67,17 @@ function changeTab(name) {
 window.onload = function() {
 	$('div#no-js-detected').style.display = 'none';
 
+	/*
 	$('span#tab-dev').addEventListener('click', function() {
 		changeTab('dev');
 	});
 	$('span#tab-media').addEventListener('click', function() {
 		changeTab('media');
 	});
+	$('span#tab-music').addEventListener('click', function() {
+		changeTab('music');
+	});
+	*/
 	$('span#tab-status').addEventListener('click', function() {
 		changeTab('status');
 	});
@@ -82,9 +87,7 @@ window.onload = function() {
 	$('span#tab-resources').addEventListener('click', function() {
 		changeTab('resources');
 	});
-	$('span#tab-music').addEventListener('click', function() {
-		changeTab('music');
-	});
+
 	
 	changeTab(state);
 };

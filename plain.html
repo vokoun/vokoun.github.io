@@ -43,12 +43,13 @@ static/normalize.css v3.0.2
 			</div>
 
 			<div class="row">
-				<span id="tab-status" class="columns two center tab">
+				<span id="tab-status" class="columns four center tab">
 					status
 				</span>
-				<span id="tab-resources" class="columns two center tab">
+				<span id="tab-resources" class="columns four center tab">
 					resources
 				</span>
+				<!--
 				<span id="tab-dev" class="columns two center tab">
 					dev
 				</span>
@@ -58,16 +59,29 @@ static/normalize.css v3.0.2
 				<span id="tab-music" class="columns two center tab">
 					music
 				</span>
-				<span id="tab-blog" class="columns two center tab">
+			 	-->
+				<span id="tab-blog" class="columns four center tab">
 					blog
 				</span>
 			</div>
 
-			<div id="no-js-detected" class="center">INFO: no javascript detected, now viewing the single page plain HTML version)</div>
+			<div id="no-js-detected" class="center"><span class="error">INFO:</span> no javascript detected, now viewing the single page plain HTML version)</div>
 
 			<div id="view">			<div class="row">
 				<div class="columns eight">
 					<h2>Status</h2>
+
+					<div class="status-item">
+						<strong>David Vokoun</strong>:  <date>2016-05-03 01:37pm</date>
+						<blockquote>On the night you left i came over, <br>and we peel the freckles from our shoulders,<br>our brand new coats so flushed in pink<br>and i knew your heart i couldn't win<br>cause the seasons change was a conduit<br>and we left our love in our summer skin</blockquote>
+						
+						<p>The summer is starting to wear on me. The longing for fall has already began.</p>
+					</div>
+
+					<div class="status-item">
+						<strong>David Vokoun</strong>:  <date>2016-02-29 09:15pm</date>
+						<p>SpaceX SES-9 launch aborted in the last seconds.</p>
+					</div>
 
 					<div class="status-item">
 						<strong>David Vokoun</strong>:  <date>2016-02-09 10:01pm</date>
@@ -265,20 +279,23 @@ static/normalize.css v3.0.2
 			<div class="row">
 				<div class="columns twelve">
 					<h2>Development</h2>
+					<!--
 
 					<h3>Applications</h3>
 					<ul>
 						<li><a href="https://bitbucket.org/vokoun/xvx">xvx</a>: a source code and prose editor (in python3 and Gtk+)</li>
 						<li>pish: a personal information shell to display weather, news, email and other notifications</li>
 						<li><a href="https://bitbucket.org/vokoun/mdpv">mdpv</a>: a Markdown viewier (in python Gtk+, WebKit)</li>
+						<li>vise: a static site builder</li>
 					</ul>
 
 					<h3>Libraries</h3>
 					<ul>
 						<li>ptk: a experimental python toolkit</li>
 						<li>jtk: a experimental javascript toolkit</li>
-						<li>lua-sdl2: a lua to sdl2 library</li>
-						<li>lune: a lua-sdl2 based game dev library</li>
+						<li>luca: a python WebKit2 development platform/library</li>
+						<li>lua-sdl2: a lua binding to the sdl2 library</li>
+						<li>lune: a lua based (lua-sdl2) game development library</li>
 					</ul>
 
 					<h3>Games</h3>
@@ -286,14 +303,16 @@ static/normalize.css v3.0.2
 						<li>tetra: an experimental 2D, top-down, open-world, strategy-rpg</li>
 					</ul>
 
-					<h3>Languages</h3>
+					<h3>Linga</h3>
 					<ul> 
-						<li>linga: the linga programming language specification, version 1</li>
-						<li>lingac: the linga programming language implemented in pure C</li>
-						<li>lingap: the linga programming language prototype implemented in lua and C</li>
+						<li>Specification: The linga programming language, version 1.0-alpha</li>
+						<li>linga: the linga programming language prototype implementation, in lua and C.  (Comprising a VM, Interpreter, REPL, Compiler, Package Manager</li>
+						<li>lmake: a shell script that handles fetching, resolving dependencies, building, installing, and upgrading linga</li>
 					</ul>
+					-->
 
 					<small>[Will update with links as I put various repositories online]</small>
+					<code>function() { return this; }</code>
 
 				</div>
 			</div>
@@ -320,10 +339,6 @@ static/normalize.css v3.0.2
 					<h3>Instrumentals</h3>
 					<h3>Experimentals</h3>
 					<h3>Demos</h3>
-
-
-
-					<code>function() { return this; }</code>
 				</div>
 			</div>
 
@@ -338,24 +353,36 @@ static/normalize.css v3.0.2
 <br><hr><br>
 </div>
 
-
 			<div class="row">
-				<div class="columns eight">
-					<strong>David Vokoun</strong><br>
+				<div class="columns three">
+					<img src="static/avatar.jpg" style="border-radius:64px;">
+				</div>
+
+				<div class="columns five">
+					<h4>David Vokoun</h4>
+					<strong>Contact</strong>
 					<ul>
 						<li>Email: davidvokoun@outlook.com</li>
-						<li>Github: github.com/vokoun</li>
+						<li>XMPP: n/a</li>
+						<li>DISCORD: n/a</li>
 					</ul>
+					<strong>Profiles</strong>
+					<ul>
+						<li>Github: <a href="https://github.com/vokoun">github.com/vokoun</a></li>
+						<li>Bitbucket: <a href="https://bitbucket.org/vokoun">bitbucket.org/vokoun</a></li>
+						<li>Twitter: <a href="https://twitter.com/___dev">@___dev</a></li>
+					</ul>					
 				</div>
 
 				<div class="columns four">
 					<strong>Privacy Policy</strong>
 					<div>
-						No advertisements, cookies, trackers, analytics
+						Absolutely no advertisements, cookies, trackers, or analytics.
 					</div>
+					<br>
 					<strong>Embedded Media Policy</strong>
 					<div>
-						By preventing embedded media from loading automatically, users are given a choice of what third party services they trust to connect with.
+						All external media, such as songs and videos must be explicity loaded by the user. By preventing embedded media from loading automatically, users are given a choice of what third party services they trust to connect with.
 					</div>
 				</div>
 			</div>
@@ -364,8 +391,7 @@ static/normalize.css v3.0.2
 				<div class="columns twelve copyright-notice pad20">
 					<p>Copyright 2015, 2016  David Vokoun</p>
 
-					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAAP1BMVEUAAAAAAAAAAAAAAAAAAAAAAAA/AD8/AD8AAABAAEA/AD8/AD8/AD9AAEBAAEA/AD8/AD8/AD8/AD9AAED///+xrc2oAAAAE3RSTlMANTY3OUpcXV9naGnR0tr09fj5uhy2ywAAAIdJREFUeNrFlNsKgCAQRLWyq1rZ//9r6BKytEwsCO3DcIRh0fOgaTedfcYJ1JeOzYGJn0e/+xF31ivPBjuxdCLspNJJij3oPsvHu8IRJvAuQNXpLJBTesbGKbFxSmyKUjZ+avdg45TA+A+eq1OBmFOZuAuZuFOJFHuqU5FeTivpPeN/YzDN5gYtCA8V9U2pegAAAABJRU5ErkJggg==">
-		
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAAP1BMVEUAAAAAAAAAAAAAAAAAAAAAAAA/AD8/AD8AAABAAEA/AD8/AD8/AD9AAEBAAEA/AD8/AD8/AD8/AD9AAED///+xrc2oAAAAE3RSTlMANTY3OUpcXV9naGnR0tr09fj5uhy2ywAAAIdJREFUeNrFlNsKgCAQRLWyq1rZ//9r6BKytEwsCO3DcIRh0fOgaTedfcYJ1JeOzYGJn0e/+xF31ivPBjuxdCLspNJJij3oPsvHu8IRJvAuQNXpLJBTesbGKbFxSmyKUjZ+avdg45TA+A+eq1OBmFOZuAuZuFOJFHuqU5FeTivpPeN/YzDN5gYtCA8V9U2pegAAAABJRU5ErkJggg==">`
 				</div>
 			</div>
 
