@@ -4,12 +4,20 @@
  * Free software under the terms of the MIT License
  */
 
+a {
+	color:#00447c;
+}
+
+date {
+	font-size:small;
+	color:#888;
+}
+
 
 .header {
 	text-align:center;
 	padding-top:30px;
 }
-
 
 
 #view {
@@ -21,22 +29,25 @@
 
 }
 
-
 .tab {
+
 	cursor:pointer;
-	font-weight:bold;
 	font-variant: small-caps;
+	height:40px;
+	line-height:40px;
+	vertical-align: top;
 	background:transparent;
 }
 
 .tab:hover {
 	background:#444543;
 	color:#fefefe;
-	font-weight:bold;
 }
 
 .tab-active {
+	/* was gold */
 	background:gold;
+
 }
 
 .tab-active:hover {
@@ -49,9 +60,7 @@
 }
 
 
-a {
-	color:#00447c;
-}
+
 
 
 .status-item {
@@ -67,24 +76,6 @@ a {
 	margin-bottom:4px;
 	padding:4px; 
 }
-/* class modifiers */
-.tiny {
-	font-size:40%;
-}
-
-.hidden {
-	display:none;
-	position:absolute;
-	top:-1000px;
-	left:-1000px;
-	width:1px;
-	height:1px;
-}
-
-date {
-	font-size:small;
-	color:#888;
-}
 
 
 #news, #links {
@@ -99,13 +90,35 @@ date {
 }
 
 .embed {
+	padding-bottom:0;
 	border:1px solid #eee;
+	background:#f2f2f2;
+	cursor:pointer; 
+	transition:all 300ms;
+}
+.embed:hover {
+	background: #eafeaf;
 }
 
-.embed {background:#f2f2f2; padding-bottom:0; cursor:pointer; }
+.embed iframe {
+	padding-bottom:0; 
+	margin:0; margin-bottom:0;
+}
 
-.embed iframe {padding-bottom:0; margin:0; margin-bottom:0;}
 
+/* class modifiers */
+.tiny {
+	font-size:40%;
+}
+
+.hidden {
+	display:none;
+	position:absolute;
+	top:-1000px;
+	left:-1000px;
+	width:1px;
+	height:1px;
+}
 
 .pad20 { padding:20px;}
 

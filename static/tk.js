@@ -1,10 +1,10 @@
 /*
  * tk.js (the software library `mtkjs` a minimalistic toolkit for javascript)
- * Copyright 2016  David Vokoun
+ * Copyright 2014, 2015, 2016  David Vokoun
  * Free Software under the terms of the The MIT License
  *
  * (mtkjs has been completely stripped back, this sketelon exists just to serve
- *  a few basic functions, check out bithbucket.org/vokoun/mtkjs for more info)
+ *  a few basic functions, check out github.com/vokoun/mtkjs for more info)
  */
 
 /* Toolkit Constructor */

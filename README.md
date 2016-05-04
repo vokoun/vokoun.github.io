@@ -1,6 +1,6 @@
 # vokoun.github.io
 
-All content this website, unless othersise stated is
+All content on this website, unless otherwise noted is
 
 	Copyright 2015, 2016  David Vokoun
 	AllRightsReserved

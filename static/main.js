@@ -27,33 +27,39 @@ function changeTab(name) {
 	$('span#tab-resources').classList.remove('tab-active');
 	//$('span#tab-music').classList.remove('tab-active');
 
+
+	$('div#view-status').style.display = 'none';
+	$('div#view-resources').style.display = 'none';
+	$('div#view-blog').style.display = 'none';
+	//$('div#view-status').style.display = 'none';
+	//$('div#view-status').style.display = 'none';
+	//$('div#view-status').style.display = 'none';
+
 	
 	if (name !== null && name !== 'null') {
 		console.log("[changeTab] current: " + state + ", name: " + name);
 		state = name;
 
-		tk.get('./view/'+name+'.html', function() {
-			$('span#tab-' + name).classList.add('tab-active');
-			$('div#view').innerHTML = this.responseText;
+		$('span#tab-' + name).classList.add('tab-active');
+		$('div#view-' + name).style.display = 'block';
 
-			if (name !== 'null')
-				window.location.hash = '#' + name;
-		
-			if (name === 'status') { //fetch status extra views
-				//tk.get('./view/status_news.html', function() {
-				//	$('div#news').innerHTML = this.responseText;
-				//});
-				//tk.get('./view/status_resources.html', function() {
-					//$('div#resources').innerHTML = this.responseText;
+		if (name !== 'null')
+			window.location.hash = '#' + name;
+	
+		if (name === 'status') { //fetch status extra views
+			//tk.get('./view/status_news.html', function() {
+			//	$('div#news').innerHTML = this.responseText;
+			//});
+			//tk.get('./view/status_resources.html', function() {
+				//$('div#resources').innerHTML = this.responseText;
 
-					/*$('span#resources-show').addEventListener('click', function() {
-						$('div#resources').classList.add('show-all');
-					});*/
-				//});
+				/*$('span#resources-show').addEventListener('click', function() {
+					$('div#resources').classList.add('show-all');
+				});*/
+			//});
 
-			}
+		}
 
-		});
 
 
 	} else {
@@ -65,7 +71,7 @@ function changeTab(name) {
 
 
 window.onload = function() {
-	$('div#no-js-detected').style.display = 'none';
+	//$('div#no-js-detected').style.display = 'none';
 
 	/*
 	$('span#tab-dev').addEventListener('click', function() {
