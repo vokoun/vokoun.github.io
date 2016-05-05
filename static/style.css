@@ -64,11 +64,17 @@ date {
 
 
 .status-item {
-		padding:4px; 
+	padding:4px; 
 	margin-bottom:10px;
 }
 .status-item p {
 	margin-bottom:0;
+}
+
+.status-item img {
+	border:4px solid #eee;
+	width:100%;
+	max-width:320px;
 }
 
 .news-item {
