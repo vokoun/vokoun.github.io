@@ -1,0 +1,57 @@
+a {
+	text-decoration: none;
+	color:royalblue;
+}
+
+a:hover {
+	color:royalblue;
+	border-bottom:1px solid royalblue;
+}
+
+hr {
+	padding:5px;
+	padding-bottom:5px;
+	padding-top:5px;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+/* by element */
+p {margin-bottom:0;}
+p + p {text-indent: 2em;}
+
+/* by id */
+
+div#header {
+	padding-bottom:20px; 
+	padding-top:40px;
+}
+
+/* by class */
+div.card {
+	margin:0 0 10px 0;
+	padding:10px 10px 10px 10px;
+
+	border: 1px solid #eee;
+	/*border-right-width: 0;
+	border-bottom-width: 0;*/
+}
+
+
+
+.post-title {
+	font-weight:bold;
+}
+
+.post-date {
+	font-size:80%;
+	opacity:0.8;
+}
+
+.resource {
+	background:#eee;
+}
+
+.pad5 {
+	padding:5px;
+}

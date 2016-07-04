@@ -9,24 +9,13 @@ All content on this website, unless otherwise noted is
 
 ## Javascript
 
-static/main.js
-	
-	main.js (the software that powers the website 'vokoun.github.io')
-	Copyright 2016  David Vokoun
- 	Free software under the terms of the MIT License
-
-static/tk.js
-
-	tk.js (the software library `mtkjs` a minimalistic toolkit for javascript)
-	Copyright 2016  David Vokoun
-	Free software under the terms of the MIT License
 
 -----------------------------------------------------------------------------
 
 ## CSS
 
 
-static/style.css
+css/style.css
 
 	style.css (stylesheet for the website 'vokoun.github.io')
 	Copyright 2016 David Vokoun
@@ -35,10 +24,10 @@ static/style.css
 
 ### external
 
-static/skeleton.css
+css/skeleton.css
 
 	skeleton.css | MIT License | https://github.com/dhg/Skeleton/
 
-static/normalize.css
+css/normalize.css
 
 	normalize.css v3.0.2 | MIT License | git.io/normalize
