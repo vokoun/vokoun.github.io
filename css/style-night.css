@@ -1,0 +1,16 @@
+body {
+    background:#111;
+    color:white;
+}
+
+div.card {
+	border: 1px solid #222;
+}
+
+.embed {
+    background:#141414;
+}
+
+.embed:hover {
+    color: black;
+}
