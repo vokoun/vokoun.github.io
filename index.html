@@ -6,7 +6,6 @@
 	<title>vokoun.github.io</title>
 
 	<meta name="viewport" content="width=device-width">
-
 	
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
@@ -21,18 +20,8 @@
 		<div class="row">
 			<div id="header" class="twelve columns center">
 				<h1>vokoun.github.io</h1>
-				<small>developer, storyteller, songwriter</small>
+				<small>developer, artist, storyteller, songwriter</small>
 			</div>
-		</div>
-
-		<div class="row" style='text-align:center; display:none;'>
-			<div class="six columns">
-				index
-			</div>
-			<div class="six columns">
-				resources
-			</div>
-			<br><br>
 		</div>
 
 		<div class="row">
@@ -40,8 +29,17 @@
 				<h3>status</h3>
 				
 				<div class="card">
+					<div class="post-date">Feb 11th, 2022  6:53pm</div> 
+					<div class="post-content">
+						<p>Had some free time so I started working on my static site generator again, <a href="https://github.com/vokoun/vise">vise</a> (not uploaded yet).  Aftering digging through my old source code I made the executive decision to scrap it and start over.</p>
+						<p>The generator itself is fairly straight-forward. A python program that fetches items as JSON data + markdown text content, for each category (status, news, pictures) and runs that data through jinja2 templates. With some extra functionality for generating extra things like single item permalinks, image thumbnails, and various hooks for pulling in external content and deploying via git.</p>
+						<p>Besides the actual generator I need to comb through the CSS/JS of this page and salvage what I can and rewrite the templates. I need to flesh out the external media loading I threw together to allow embedding things without automatically exposing a visitors information to third parties. Well, I'll get some of it together over the next day or two and update with more.</p>
+					</div>
+				</div>
+
+				<div class="card">
 					<div class="post-date">May 13th, 2019 7:44pm</div> 
-					<div class="post-content">Trying to clean up the site. Took some pretty decent pictures of the moon. Working on uploading a series. Stay tuned.</div>
+					<div class="post-content">Took some pretty decent pictures of the moon. Working on uploading a series.</div>
 				</div>
 
 				<div class="card">
@@ -77,7 +75,7 @@
 				</div>
 				
 				<div class="card">
-					<a href="/status.html">view all status updates</a>
+					<a href="status.html">view all status updates</a>
 				</div>
 				<br>
 				<br>
@@ -85,12 +83,6 @@
 
 			<div class="five columns">
 				<h3>news</h3>
-				
-				<div class="card">
-					<div class="post-date">2016-05-31</div>
-					<div class="post-title"><a href="arstechnica.co.uk">US appeals court says your files are ripe for seizure -- fourth amendment doesn't apply</a></div> 
-					<div class="post-domain">arstechnica.co.uk</div>
-				</div>
 				
 				<div class="card">
 					<div class="post-date">2016-04-06</div>
@@ -104,14 +96,14 @@
 					<div class="post-domain">underhanded-c.org</div>
 				</div>
 				
-				<div class="card">
-					<a href="/news.html">view all news</a>
-				</div>
+				<!--<div class="card">
+					<a href="news.html">view all news</a>
+				</div>-->
 				<br>
 				<hr>
 				<h3>other links</h3>
 				<div class="card">
-					<a href="/resources.html">View a Collection of Resources</a>
+					<a href="resources.html">View a Collection of Resources</a>
 				</div>
 				<br>
 			</div>
@@ -139,7 +131,7 @@
 				<table>
 					<tr>
 						<td>Email</td>
-						<td><a href="mailto://david@typemi.me">david@typemi.me</a></td>
+						<td><a href="mailto://david@typemime.com">david@typemime.com</a></td>
 					</tr>
 				</table>
 				<strong>Profiles</strong>
@@ -153,11 +145,11 @@
 			</div>
 
 			<div class="columns five pad5">
-								<!-- Site Info -->
+				<!-- Site Info -->
 				<strong>vokoun.github.io</strong>
 
 				<div style="font-size:80%;">
-					Copyright 2015-2019  David Vokoun<br>
+					Copyright 2015-2022  David Vokoun<br>
 					All Rights Reserved</br><br>
 				</div>
 			
@@ -184,6 +176,7 @@
 				<br><br>
 			</div>
 		</div>
+
 	</div>
 
 
